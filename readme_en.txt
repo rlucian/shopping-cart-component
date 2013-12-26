@@ -206,7 +206,7 @@ $book = Book::model()->findByPk(1); //price = 100
 Yii::app()->shoppingCart->put($book,2); //putting 2 items
 $positions = Yii::app()->shoppingCart->getPositions();
 foreach($positions as $position) {
-$price = $position->getQuantity(); //2
+	$price = $position->getQuantity(); //2  // should this be $quantity=... ?
 }
 ~~~
 
